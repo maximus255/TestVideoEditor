@@ -15,6 +15,11 @@
 		84F0D2FB264C32DA0056FF29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F0D2F9264C32DA0056FF29 /* LaunchScreen.storyboard */; };
 		84F0D2FE264C32DA0056FF29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0D2FD264C32DA0056FF29 /* main.m */; };
 		84F0D308264C32DA0056FF29 /* TestVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0D307264C32DA0056FF29 /* TestVideoTests.m */; };
+		84F0D314264C3F6F0056FF29 /* transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0D313264C3F6F0056FF29 /* transition.m */; };
+		84F0D318264DB7B30056FF29 /* filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0D317264DB7B30056FF29 /* filter.m */; };
+		84F0D31E264EB3400056FF29 /* MSLFilter1.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0D31D264EB3400056FF29 /* MSLFilter1.m */; };
+		84F0D323264ECF4A0056FF29 /* MSLFilter2.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0D322264ECF4A0056FF29 /* MSLFilter2.m */; };
+		84F0D325264ED6B30056FF29 /* common.metal in Sources */ = {isa = PBXBuildFile; fileRef = 84F0D324264ED6B30056FF29 /* common.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +48,17 @@
 		84F0D303264C32DA0056FF29 /* TestVideoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestVideoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F0D307264C32DA0056FF29 /* TestVideoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVideoTests.m; sourceTree = "<group>"; };
 		84F0D309264C32DA0056FF29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F0D312264C3F6F0056FF29 /* transition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = transition.h; sourceTree = "<group>"; };
+		84F0D313264C3F6F0056FF29 /* transition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = transition.m; sourceTree = "<group>"; };
+		84F0D316264DB7B30056FF29 /* filter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = filter.h; sourceTree = "<group>"; };
+		84F0D317264DB7B30056FF29 /* filter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = filter.m; sourceTree = "<group>"; };
+		84F0D31A264EB0190056FF29 /* filter1.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = filter1.metal; sourceTree = "<group>"; };
+		84F0D31C264EB3400056FF29 /* MSLFilter1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSLFilter1.h; sourceTree = "<group>"; };
+		84F0D31D264EB3400056FF29 /* MSLFilter1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSLFilter1.m; sourceTree = "<group>"; };
+		84F0D31F264ECED50056FF29 /* filter2.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = filter2.metal; sourceTree = "<group>"; };
+		84F0D321264ECF4A0056FF29 /* MSLFilter2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSLFilter2.h; sourceTree = "<group>"; };
+		84F0D322264ECF4A0056FF29 /* MSLFilter2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSLFilter2.m; sourceTree = "<group>"; };
+		84F0D324264ED6B30056FF29 /* common.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = common.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +82,9 @@
 		84F0D2DF264C32D80056FF29 = {
 			isa = PBXGroup;
 			children = (
+				84F0D324264ED6B30056FF29 /* common.metal */,
+				84F0D31F264ECED50056FF29 /* filter2.metal */,
+				84F0D31A264EB0190056FF29 /* filter1.metal */,
 				84F0D2EA264C32D80056FF29 /* TestVideo */,
 				84F0D306264C32DA0056FF29 /* TestVideoTests */,
 				84F0D2E9264C32D80056FF29 /* Products */,
@@ -95,6 +114,14 @@
 				84F0D2F9264C32DA0056FF29 /* LaunchScreen.storyboard */,
 				84F0D2FC264C32DA0056FF29 /* Info.plist */,
 				84F0D2FD264C32DA0056FF29 /* main.m */,
+				84F0D312264C3F6F0056FF29 /* transition.h */,
+				84F0D313264C3F6F0056FF29 /* transition.m */,
+				84F0D316264DB7B30056FF29 /* filter.h */,
+				84F0D317264DB7B30056FF29 /* filter.m */,
+				84F0D31C264EB3400056FF29 /* MSLFilter1.h */,
+				84F0D31D264EB3400056FF29 /* MSLFilter1.m */,
+				84F0D321264ECF4A0056FF29 /* MSLFilter2.h */,
+				84F0D322264ECF4A0056FF29 /* MSLFilter2.m */,
 			);
 			path = TestVideo;
 			sourceTree = "<group>";
@@ -210,7 +237,12 @@
 			files = (
 				84F0D2F3264C32D80056FF29 /* ViewController.m in Sources */,
 				84F0D2ED264C32D80056FF29 /* AppDelegate.m in Sources */,
+				84F0D31E264EB3400056FF29 /* MSLFilter1.m in Sources */,
 				84F0D2FE264C32DA0056FF29 /* main.m in Sources */,
+				84F0D318264DB7B30056FF29 /* filter.m in Sources */,
+				84F0D314264C3F6F0056FF29 /* transition.m in Sources */,
+				84F0D325264ED6B30056FF29 /* common.metal in Sources */,
+				84F0D323264ECF4A0056FF29 /* MSLFilter2.m in Sources */,
 				84F0D2F0264C32D80056FF29 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +336,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTLLINKER_FLAGS = "-cikernel";
+				MTL_COMPILER_FLAGS = "-fcikernel";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -356,6 +390,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTLLINKER_FLAGS = "-cikernel";
+				MTL_COMPILER_FLAGS = "-fcikernel";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -374,6 +410,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MTLLINKER_FLAGS = "-cikernel";
 				PRODUCT_BUNDLE_IDENTIFIER = alphaplugins.TestVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -391,6 +428,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MTLLINKER_FLAGS = "-cikernel";
 				PRODUCT_BUNDLE_IDENTIFIER = alphaplugins.TestVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
