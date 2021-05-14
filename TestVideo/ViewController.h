@@ -14,12 +14,14 @@
 @property (weak, nonatomic) IBOutlet UIButton *transitionButton;
 @property (weak, nonatomic) IBOutlet UIButton *filter1Button;
 @property (weak, nonatomic) IBOutlet UIButton *filter2Button;
+@property (weak, nonatomic) IBOutlet UIButton *blurButton;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 - (IBAction)video1Pressed:(UIButton *)sender;
 - (IBAction)video2Pressed:(UIButton *)sender;
 - (IBAction)transitionPressed:(id)sender;
 - (IBAction)filter2Pressed:(id)sender;
 - (IBAction)filter1Pressed:(id)sender;
+- (IBAction)blurPressed:(id)sender;
 
 -(void) DebugAlert:(NSString*)message;
 @end

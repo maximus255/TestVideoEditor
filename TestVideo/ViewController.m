@@ -132,6 +132,7 @@
     _transitionButton.enabled = (_video1URL!=nil && _video2URL!=nil)? YES : NO;
     _filter1Button.enabled = (_video1URL!=nil);
     _filter2Button.enabled = (_video1URL!=nil);
+    _blurButton.enabled = (_video1URL!=nil);
 
 }
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
@@ -145,6 +146,15 @@
     [alertController addAction:[UIAlertAction actionWithTitle:@"Close" style:UIAlertActionStyleCancel handler:nil]];
     [self presentViewController:alertController animated:YES completion:nil];
     //});
+}
+
+- (IBAction)blurPressed:(id)sender {
+    self.activityIndicator.hidden = NO;
+    [self.activityIndicator startAnimating];
+    
+    _filter1 = [[Filter alloc] init];
+    _filter1.delegate = self;
+    [_filter1 filterVideoURL:_video1URL withFilter:@"CIGaussianBlur"];
 }
 
 - (IBAction)filter1Pressed:(id)sender {

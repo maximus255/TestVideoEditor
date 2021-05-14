@@ -73,12 +73,21 @@
                                     <action selector="filter2Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uPY-jn-n98"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbV-xz-f6T">
+                                <rect key="frame" x="179" y="407" width="54" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Blur"/>
+                                <connections>
+                                    <action selector="blurPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yss-aJ-cdD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="I5S-DL-Kjy" id="6tU-nQ-v4R"/>
+                        <outlet property="blurButton" destination="HbV-xz-f6T" id="bON-e9-58X"/>
                         <outlet property="filter1Button" destination="Cbx-QA-a7L" id="MKY-Mh-s21"/>
                         <outlet property="filter2Button" destination="jkm-sM-gt0" id="PWw-We-LWE"/>
                         <outlet property="transitionButton" destination="14M-tG-XDc" id="ftH-z2-3Zc"/>
